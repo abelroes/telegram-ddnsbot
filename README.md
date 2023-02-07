@@ -5,6 +5,9 @@ A simple Python script to call a Telegram Private Bot and send an IP address bas
 It runs every X time (as configured in _crontab_ file - innitially for each 30min) and sends a Telegram message everytime IP changes as recorded inside `last_ip.txt` file.
 
 
+# DockerHub:
+https://hub.docker.com/r/abelroes/ddnsbot
+
 
 ## Requisites:
 
