@@ -1,0 +1,12 @@
+FROM python:3.6.12-alpine3.12
+
+ARG SERVICE_NAME
+ARG SERVICE_PORT
+ARG DDNS_BOT_TOKEN
+ARG TELEGRAM_GROUP_ID
+
+COPY . .
+
+RUN crontab crontab
+
+CMD ["crond", "-f"]

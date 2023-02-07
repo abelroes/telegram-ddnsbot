@@ -1,1 +1,1 @@
-*/15 * * * * python3 /home/abel/momofinderbot/momofinder.py
+*/30 * * * * python3 /script/ddns_bot.py

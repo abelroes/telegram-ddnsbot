@@ -1,0 +1,11 @@
+version: '1'
+
+services:
+  ddnsbot:
+    build: .
+    image: abelroes/ddnsbot
+    environment:
+      - DDNS_BOT_TOKEN=${DDNS_BOT_TOKEN}
+      - TELEGRAM_GROUP_ID=${TELEGRAM_GROUP_ID}
+      - SERVICE_NAME=${SERVICE_NAME}
+      - SERVICE_PORT=${SERVICE_PORT}
