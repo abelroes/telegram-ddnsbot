@@ -3,7 +3,7 @@ version: '1'
 services:
   ddnsbot:
     build: .
-    image: abelroes/ddnsbot
+    image: abelroes/telegram-ddnsbot
     environment:
       - DDNS_BOT_TOKEN=${DDNS_BOT_TOKEN}
       - TELEGRAM_GROUP_ID=${TELEGRAM_GROUP_ID}
