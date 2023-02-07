@@ -1,4 +1,4 @@
-# ddns_bot
+# Telegram DDNS Bot
 
 A simple Python script to call a Telegram Private Bot and send an IP address based on a Docker Cronjob.
 
