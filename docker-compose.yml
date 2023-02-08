@@ -4,6 +4,7 @@ services:
   ddnsbot:
     build: .
     image: abelroes/telegram-ddnsbot
+    container_name: ddnsbot
     environment:
       - SERVICE_NAME=${SERVICE_NAME}
       - SERVICE_PORT=${SERVICE_PORT}
