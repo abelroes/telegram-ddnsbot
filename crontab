@@ -1,1 +1,1 @@
-*/30 * * * * python3 /script/ddns_bot.py
+*/5 * * * * python3 /script/ddns_bot.py

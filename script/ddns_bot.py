@@ -24,7 +24,7 @@ if __name__ == "__main__":
         file.close()
 
         if last_ip != external_ip:
-            text_content = f"Novo endereço de IP do {SERVICE_NAME}:\n{external_ip}" + (f":{SERVICE_PORT}" if SERVICE_PORT else "")
+            text_content = f"Novo endereço de IP do {SERVICE_NAME}:\n`{external_ip}" + (f":{SERVICE_PORT}`" if SERVICE_PORT else "`")
             payload = {
                 "chat_id":TELEGRAM_GROUP_ID,
                 "text":text_content,
