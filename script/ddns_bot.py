@@ -11,7 +11,7 @@ if __name__ == "__main__":
     TELEGRAM_GROUP_ID = os.getenv("TELEGRAM_GROUP_ID")
 
     if DDNS_BOT_TOKEN and TELEGRAM_GROUP_ID:
-        TELEGRAM_URL_SEND_MSG = f"https://api.telegram.org/bot{DDNS_BOT_TOKEN}/sendMessage"
+        TELEGRAM_URL_SEND_MSG = f"https://api.telegram.org/bot{DDNS_BOT_TOKEN}/sendMessage?&parse_mode=MarkdownV2"
 
         external_ip = request.urlopen("https://ident.me").read().decode("utf8")
 
