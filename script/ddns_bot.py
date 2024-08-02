@@ -13,7 +13,7 @@ if __name__ == "__main__":
     if DDNS_BOT_TOKEN and TELEGRAM_GROUP_ID:
         TELEGRAM_URL_SEND_MSG = f"https://api.telegram.org/bot{DDNS_BOT_TOKEN}/sendMessage?&parse_mode=MarkdownV2"
 
-        external_ip = request.urlopen("https://ident.me").read().decode("utf8")
+        external_ip = request.urlopen("https://4.ident.me").read().decode("utf8")
 
         script_dir = os.path.dirname(__file__)
         file_name = "last_ip.txt"
